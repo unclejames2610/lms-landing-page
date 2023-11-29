@@ -8,6 +8,7 @@ import Roles from "@/components/Roles";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import RecentCourses from "@/components/RecentCourses";
 import Instructors from "@/components/Instructors";
+import BecomeInstructor from "@/components/BecomeInstructor";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FeaturedCourses />
       <RecentCourses />
       <Instructors />
+      <BecomeInstructor />
     </div>
   );
 }
