@@ -52,13 +52,13 @@ const Navbar: FC<NavbarProps> = ({ signIn, setSignIn }) => {
             />
           </div>
           <button
-            className="text-mainPurple px-6 py-2 rounded-lg bg-white font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-black hidden lg:block"
+            className="text-mainPurple px-6 py-2 rounded-lg bg-white font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-black hidden lg:block lg:w-32"
             onClick={() => setSignIn(!signIn)}
           >
             Sign In
           </button>
           <button
-            className="text-white px-4 py-2 rounded-lg bg-mainPurple font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-mainPurple hidden lg:block "
+            className="text-white px-6 py-2 rounded-lg bg-mainPurple font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-mainPurple hidden lg:block lg:w-32"
             onClick={() => {
               router.push("signup");
             }}

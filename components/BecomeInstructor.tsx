@@ -10,28 +10,28 @@ const BecomeInstructor = () => {
         </h3>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <div className="flex items-center gap-4 p-2">
-            <div className="font-semibold text-[#564FFD] text-2xl p-4 rounded-full bg-[#EBEBFF] flex items-center justify-center h-16 w-16">
+            <div className="font-semibold text-[#564FFD] text-2xl p-4 rounded-full bg-[#EBEBFF] flex items-center justify-center h-12 w-12 2xl:h-16 2xl:w-16">
               <span>1</span>
             </div>
             <div>Apply to become instructor</div>
           </div>
 
           <div className="flex items-center gap-4 p-2">
-            <div className="font-semibold text-[#FF6636] text-2xl p-4 rounded-full bg-[#FFF0F0] flex items-center justify-center h-16 w-16">
+            <div className="font-semibold text-[#FF6636] text-2xl p-4 rounded-full bg-[#FFF0F0] flex items-center justify-center  h-12 w-12 2xl:h-16 2xl:w-16">
               <span> 2</span>
             </div>
             <div>Build & edit your profile</div>
           </div>
 
           <div className="flex items-center gap-4 p-2">
-            <div className="font-semibold text-[#E34444] text-2xl p-4 rounded-full bg-[#FFF0F0] flex items-center justify-center h-16 w-16">
+            <div className="font-semibold text-[#E34444] text-2xl p-4 rounded-full bg-[#FFF0F0] flex items-center justify-center h-12 w-12 2xl:h-16 2xl:w-16">
               3
             </div>
             <div>Create your new course</div>
           </div>
 
           <div className="flex items-center gap-4 p-2">
-            <div className="font-semibold text-[#23BD33] text-2xl p-4 rounded-full bg-[#E1F7E3] flex items-center justify-center h-16 w-16">
+            <div className="font-semibold text-[#23BD33] text-2xl p-4 rounded-full bg-[#E1F7E3] flex items-center justify-center h-12 w-12 2xl:h-16 2xl:w-16">
               4
             </div>
             <div>Start teaching & earning</div>
