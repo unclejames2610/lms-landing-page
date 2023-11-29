@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { CSSProperties, FC } from "react";
 import courseDp from "@/public/assets/courseDp.svg";
 import { PiUser } from "react-icons/pi";
 import { IoIosStar } from "react-icons/io";
@@ -24,6 +24,17 @@ const FeaturedCourseCard: FC<FeaturedCourseCardProps> = ({
   courseName,
   courseTextColor,
 }) => {
+  const categoryStyle: CSSProperties = {
+    padding: "4px",
+    fontSize: "10px",
+    fontWeight: "medium",
+    textTransform: "uppercase",
+    lineHeight: "0.75rem",
+    background: categoryBgColor,
+    color: categoryTextColor,
+    width: "fit-content",
+  };
+
   return (
     <div className="flex justify-center lg:block ">
       <div className="flex lg:flex-row flex-col gap-4 border border-gray-100 shadow-md">
@@ -39,7 +50,8 @@ const FeaturedCourseCard: FC<FeaturedCourseCardProps> = ({
           {/* row 1 */}
           <div className="flex lg:flex-row flex-col lg:items-center justify-between gap-1">
             <div
-              className={`p-1 text-[${categoryTextColor}] uppercase text-[10px] font-medium leading-3 bg-[${categoryBgColor}] w-fit `}
+              //   className={`p-1 text-[${categoryTextColor}] uppercase text-[10px] font-medium leading-3 bg-[${categoryBgColor}] w-fit `}
+              style={categoryStyle}
             >
               {categoryName}
             </div>
