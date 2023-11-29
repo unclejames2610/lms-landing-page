@@ -1,16 +1,24 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { Dispatch, FC, SetStateAction, useState } from "react";
 import logo from "@/public/assets/logo.svg";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 import cartIcon from "@/public/assets/cartIcon.svg";
 import { FaBars, FaXmark } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
-const Navbar = () => {
+interface NavbarProps {
+  signIn: boolean;
+  setSignIn: Dispatch<SetStateAction<boolean>>;
+}
+
+const Navbar: FC<NavbarProps> = ({ signIn, setSignIn }) => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
+  const router = useRouter();
+
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <div className="flex justify-between items-center p-4 lg:pt-10 bg-white">
         <div className="flex gap-12 items-center">
           {/* logo */}
@@ -28,7 +36,7 @@ const Navbar = () => {
               <AiOutlineSearch />
             </span>
             <input
-              className="text-mainPurple bg-transparent placeholder:text-mainPurple/30 text-sm leading-[18px] font-mulish font-bold focus:outline-none"
+              className="text-mainPurple bg-transparent placeholder:text-mainPurple/30 text-sm leading-[18px] font-mulish font-bold focus:outline-none w-full"
               placeholder="Search for courses"
             />
           </div>
@@ -43,10 +51,18 @@ const Navbar = () => {
               className="lg:h-auto lg:w-auto h-[35px] w-[30px]"
             />
           </div>
-          <button className="text-mainPurple px-6 py-2 rounded-lg bg-white font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-black hidden lg:block">
+          <button
+            className="text-mainPurple px-6 py-2 rounded-lg bg-white font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-black hidden lg:block"
+            onClick={() => setSignIn(!signIn)}
+          >
             Sign In
           </button>
-          <button className="text-white px-4 py-2 rounded-lg bg-mainPurple font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-mainPurple hidden lg:block ">
+          <button
+            className="text-white px-4 py-2 rounded-lg bg-mainPurple font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-mainPurple hidden lg:block "
+            onClick={() => {
+              router.push("signup");
+            }}
+          >
             Join Kuda
           </button>
 
@@ -75,14 +91,22 @@ const Navbar = () => {
               <AiOutlineSearch />
             </span>
             <input
-              className="text-mainPurple bg-transparent placeholder:text-mainPurple/30 text-sm leading-[18px] font-mulish font-bold focus:outline-none"
+              className="text-mainPurple bg-transparent placeholder:text-mainPurple/30 text-sm leading-[18px] font-mulish font-bold focus:outline-none w-full"
               placeholder="Search for courses"
             />
           </div>
-          <button className="text-mainPurple px-6 py-2 rounded-lg bg-white font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-black ">
+          <button
+            className="text-mainPurple px-6 py-2 rounded-lg bg-white font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-black "
+            onClick={() => setSignIn(!signIn)}
+          >
             Sign In
           </button>
-          <button className="text-white px-4 py-2 rounded-lg bg-mainPurple font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-mainPurple ">
+          <button
+            className="text-white px-4 py-2 rounded-lg bg-mainPurple font-mulish font-[800] text-[15px] leading-[22.5px] border-2 border-mainPurple "
+            onClick={() => {
+              router.push("signup");
+            }}
+          >
             Join Kuda
           </button>
         </div>
