@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex lg:flex-row flex-col h-screen bg-lightPurple lg:items-center p-12  xl:px-24 justify-between">
+    <div className="flex lg:flex-row flex-col min-h-screen bg-lightPurple lg:items-center p-12  xl:px-24 gap-12 justify-between">
       <div className="flex flex-col items-start gap-4">
         <h2 className="font-mulish font-[900] text-5xl leading-[50px] text-mainPurple">
           Learn at Kuda

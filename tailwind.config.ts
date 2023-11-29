@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         mainPurple: "#40196D",
         lightPurple: "#EFF1FF",
+        customBlue: "#06052E",
+        lightBlue: "#DFE3FF",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
