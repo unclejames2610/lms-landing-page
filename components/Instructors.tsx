@@ -11,7 +11,7 @@ import InstructorsCard from "./InstructorsCard";
 
 const Instructors = () => {
   return (
-    <div className="min-h-screen flex lg:items-center p-4 lg:p-12 gap-8 flex-col ">
+    <div className="min-h-screen flex p-4 lg:p-12 gap-8 flex-col ">
       {/* writing */}
       <h4 className="text-[40px] leading-[48px] font-semibold">
         Top instructor of the month

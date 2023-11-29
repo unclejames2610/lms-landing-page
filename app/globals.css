@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700;800;900;1000&family=Poppins:wght@400;600&family=Vazirmatn:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800;900;1000&family=Poppins:wght@400;600&family=Vazirmatn:wght@600&display=swap");
 
 input {
   outline: none;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

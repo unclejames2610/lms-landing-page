@@ -19,10 +19,14 @@ const InstructorsCard: FC<InstructorCardProps> = ({
   stuNo,
 }) => {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-col gap-2 shadow-lg w-fit">
+    <div className="flex lg:block justify-center">
+      <div className="flex flex-col gap-2 shadow-lg lg:w-full">
         <div className="">
-          <Image src={imageSrc} alt={`${imageSrc}`} className="w-auto h-auto" />
+          <Image
+            src={imageSrc}
+            alt={`${imageSrc}`}
+            className="lg:w-full w-auto h-auto"
+          />
         </div>
 
         <p className="font-semibold text-gray-900 text-center">{name}</p>
