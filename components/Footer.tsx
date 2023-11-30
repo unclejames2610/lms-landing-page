@@ -137,7 +137,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex lg:flex-row flex-col gap-8 lg:gap-12">
+          {/* <div className="flex lg:flex-row flex-col gap-8 lg:gap-12">
             <div className="flex flex-col gap-5 font-mulish">
               <p className="text-mainPurple font-[700]">Lagos</p>
               <div className="font-mulish flex flex-col text-sm text-black">
@@ -165,12 +165,12 @@ const Footer = () => {
                 <p>Newlands, Cape Town</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* row 4 */}
-      <div className="flex flex-col gap-4 text-[#979797] font-mulish text-[11px] leading-3">
+      {/* <div className="flex flex-col gap-4 text-[#979797] font-mulish text-[11px] leading-3">
         <p>
           Kuda NG Customers get 25 free transfer to other banks every month.
           Extra transfers to other banks cost ₦10 each.
@@ -194,7 +194,7 @@ const Footer = () => {
           respective owners. This website contains simulated images; actual
           appearance may vary.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

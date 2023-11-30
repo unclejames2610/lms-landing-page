@@ -29,7 +29,7 @@ const HomeView = () => {
       <RecentCourses />
       <Instructors />
       <BecomeInstructor />
-      <TrustedCompanies />
+      {/* <TrustedCompanies /> */}
       <Community />
       <ClosingRemarks />
       <Footer />

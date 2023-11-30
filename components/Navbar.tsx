@@ -63,7 +63,7 @@ const Navbar: FC<NavbarProps> = ({ signIn, setSignIn }) => {
               router.push("signup");
             }}
           >
-            Join Kuda
+            Sign Up
           </button>
 
           {navOpen ? (

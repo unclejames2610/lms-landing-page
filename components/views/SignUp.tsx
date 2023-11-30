@@ -59,7 +59,7 @@ const SignUp = () => {
                 type="text"
                 name="username"
                 id="username"
-                placeholder="Username or Email Address"
+                placeholder="Username"
               />
             </div>
 
