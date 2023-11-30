@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="flex lg:flex-row flex-col justify-between gap-8">
           <div className="flex flex-col gap-5 text-mainPurple font-bold font-mulish">
             <p className="font-700">Contact</p>
-            <p className="underline text-sm">hello@kuda.com</p>
+            <p className="underline text-sm">academy@kuda.com</p>
             <div className="flex flex-col lg:flex-row gap-4">
               <Image src={twitter} alt="" />
               <Image src={insta} alt="" />
