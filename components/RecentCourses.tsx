@@ -49,7 +49,7 @@ const RecentCourses = () => {
                 </div>
 
                 <p className="text-[#FF6636] font-semibold text-lg leading-[24px]">
-                  $57
+                  ₦5,700
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ const RecentCourses = () => {
                 </div>
 
                 <p className="text-[#FF6636] font-semibold text-lg leading-[24px]">
-                  $57
+                  ₦5,700
                 </p>
               </div>
 
@@ -167,7 +167,7 @@ const RecentCourses = () => {
                 </div>
 
                 <p className="text-[#FF6636] font-semibold text-lg leading-[24px]">
-                  $57
+                  ₦5,700
                 </p>
               </div>
 

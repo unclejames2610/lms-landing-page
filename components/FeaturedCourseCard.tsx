@@ -42,7 +42,7 @@ const FeaturedCourseCard: FC<FeaturedCourseCardProps> = ({
         <div>
           <Image
             src={imageSrc}
-            alt={`${imageSrc}`}
+            alt={`₦{imageSrc}`}
             className="w-full h-full  lg:w-auto"
           />
         </div>
@@ -57,9 +57,9 @@ const FeaturedCourseCard: FC<FeaturedCourseCardProps> = ({
             </div>
 
             <div className="flex items-center gap-1 ">
-              <p className="text-lg leading-[24px] text-gray-900">$14.00</p>
+              <p className="text-lg leading-[24px] text-gray-900">₦1,400.00</p>
               <p className="text-sm leading-6 line-through text-gray-400">
-                $26.00
+                ₦2,600.00
               </p>
             </div>
           </div>

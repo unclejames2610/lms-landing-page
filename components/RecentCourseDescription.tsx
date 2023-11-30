@@ -72,8 +72,8 @@ const RecentCourseDescription: FC<RecentCourseDescriptionProps> = ({
         {/* row 5 */}
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex gap-2 items-center">
-            <h5 className="text-gray-900 text-2xl">$14.00</h5>
-            <p className="text-gray-500 line-through">$26.00</p>
+            <h5 className="text-gray-900 text-2xl">₦1,400.00</h5>
+            <p className="text-gray-500 line-through">₦2,600.00</p>
             <div className="text-[#FF6636] font-medium text-sm leading-[14px] p-2 bg-[#FFEEE8]">
               56% OFF
             </div>
