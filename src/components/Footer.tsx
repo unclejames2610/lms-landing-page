@@ -172,7 +172,7 @@ const Footer = () => {
       {/* <div className="flex flex-col gap-4 text-[#979797] font-mulish text-[11px] leading-3">
         <p>
           Kuda NG Customers get 25 free transfer to other banks every month.
-          Extra transfers to other banks cost ₦10 each.
+          Extra transfers to o   ther banks cost ₦10 each.
         </p>
         <p>
           © 2022 Kuda MF Bank (RC796975). All rights reserved. All deposits are
